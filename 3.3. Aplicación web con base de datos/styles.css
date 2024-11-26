@@ -1,0 +1,166 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+    text-shadow: 2px 2px #ff6f61;
+}
+
+/* Filtros */
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #ff6f61;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filters button {
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filters button:hover {
+    background-color: #ff3b3b;
+}
+
+/* Tabla */
+table {
+    width: 80%;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background: #ff6f61;
+    color: #fff;
+}
+
+thead th {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 2px solid #ff3b3b;
+}
+
+tbody tr:nth-child(odd) {
+    background: #ffe4e1;
+}
+
+tbody tr:nth-child(even) {
+    background: #fcdede;
+}
+
+tbody td {
+    text-align: center;
+    padding: 10px;
+}
+
+tbody td button {
+    padding: 5px 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+tbody td button:hover {
+    background-color: #ff3b3b;
+}
+
+/* Paginación */
+.pagination {
+    text-align: center;
+    margin: 20px;
+    color: #333;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #ff9a9e;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.pagination button:hover {
+    background: #ff6f61;
+}
+
+/* Dialogs */
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 10;
+}
+
+.dialog.show {
+    display: block;
+    animation: pop-in 0.5s ease-in-out;
+}
+
+.dialog h2 {
+    margin-top: 0;
+    color: #ff6f61;
+}
+
+.dialog p {
+    color: #333;
+}
+
+.dialog button {
+    padding: 10px 20px;
+    background: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Animaciones */
+@keyframes pop-in {
+    0% {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
